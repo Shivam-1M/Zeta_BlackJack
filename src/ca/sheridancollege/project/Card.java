@@ -11,10 +11,48 @@ package ca.sheridancollege.project;
  *
  * @author dancye
  * @author Megha Patel
+ * @author Shivam Mungra
+ * date: April 5, 2021 
  */
 public abstract class Card {
     //default modifier for child classes
+    
+    private Value value;
+    private Suit suit;
+    
+    public Card(Suit suit, Value value) {
+        this.suit = suit;
+        this.value = value;
+    }
+    
+    /**
+     * @return the value
+     */
+    public Value getValue() {
+        return value;
+    }
 
+    /**
+     * @param value the value to set
+     */
+    public void setValue(Value value) {
+        this.value = value;
+    }
+
+    /**
+     * @return the suit
+     */
+    public Suit getSuit() {
+        return suit;
+    }
+
+    /**
+     * @param suit the suit to set
+     */
+    public void setSuit(Suit suit) {
+        this.suit = suit;
+    }
+    
     /**
      * Students should implement this method for their specific children classes
      *
