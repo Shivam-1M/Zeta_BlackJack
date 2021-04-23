@@ -12,7 +12,7 @@ package ca.sheridancollege.project;
  * @author Paul Bonenfant Jan 2020
  * @author Megha Patel
  */
-public abstract class Player {
+public class Player {
 
     private String name; //the unique name for this player
 
@@ -40,11 +40,5 @@ public abstract class Player {
     public void setName(String name) {
         this.name = name;
     }
-
-    /**
-     * The method to be overridden when you subclass the Player class with your specific type of Player and filled in
-     * with logic to play your game.
-     */
-    public abstract void play();
 
 }

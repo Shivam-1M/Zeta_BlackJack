@@ -14,17 +14,23 @@ package ca.sheridancollege.project;
  * @author Shivam Mungra
  * date: April 5, 2021 
  */
-public abstract class Card {
-    //default modifier for child classes
+public class Card {
+
+    public enum Suit{
+            HEARTS, CLUBS, SPADES,DIAMONDS
+        }
     
-    private Value value;
-    private Suit suit;
-    
-    public Card(Suit suit, Value value) {
-        this.suit = suit;
-        this.value = value;
-    }
-    
+        private Value value;
+        private Suit suit;
+        
+        //public static final String[] SUITS={"Hearts","Diamonds","Spades","Clubs"};
+        
+        public Card(Value value,Suit suit)
+        {
+            this.value=value;
+            this.suit=suit;
+        }
+
     /**
      * @return the value
      */
@@ -52,13 +58,4 @@ public abstract class Card {
     public void setSuit(Suit suit) {
         this.suit = suit;
     }
-    
-    /**
-     * Students should implement this method for their specific children classes
-     *
-     * @return a String representation of a card. Could be an UNO card, a regular playing card etc.
-     */
-    @Override
-    public abstract String toString();
-
 }
