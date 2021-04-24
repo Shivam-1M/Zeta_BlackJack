@@ -11,7 +11,9 @@ package ca.sheridancollege.project;
  * @author dancye
  * @author Paul Bonenfant Jan 2020
  * @author Megha Patel
+ * @author Shivam Mungra, Siamak Tavana, Stacy Benny, Jatin Mahajan
  */
+
 public class Player {
 
     private String name; //the unique name for this player

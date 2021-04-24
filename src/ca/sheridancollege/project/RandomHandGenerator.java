@@ -1,21 +1,15 @@
-/*
- * Shivam Mungra
- * Student ID: 991593532
- * SYST10199 - Web Programming
- */
-
 package ca.sheridancollege.project;
 
 import java.util.Random;
 
 /**
- *
- * @author Shivam Mungra
+ * Class to generate cards with values and Suit.
+ * @author Shivam Mungra, Siamak Tavana, Stacy Benny, Jatin Mahajan
  */
 public class RandomHandGenerator  {
     
    /**
-	 * 
+	 * The method for generating random cards for the player and the dealer.
 	 * @param numCards
 	 */
 	public static Card[] generateHand(int numCards) {

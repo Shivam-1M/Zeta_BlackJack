@@ -1,10 +1,8 @@
 package ca.sheridancollege.project;
 
 /**
- * 
- *
- * @author Shivam Mungra
- * date: April 5, 2021
+ * Enumeration for developing Values of Cards.
+ * @author Shivam Mungra, Siamak Tavana, Stacy Benny, Jatin Mahajan
  */
 
 public enum Value {
