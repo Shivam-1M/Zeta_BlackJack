@@ -3,8 +3,9 @@ package ca.sheridancollege.project;
 import java.util.Scanner;
 
 /**
+ * Main Program where execution of the game begins.
  *
- * @author Shivam Mungra
+ * @author Shivam Mungra, Siamak Tavana, Stacy Benny, Jatin Mahajan
  */
 public class PlayBlackJack {
 
@@ -28,7 +29,7 @@ public class PlayBlackJack {
             System.out.println("Total Available Chips: " + totChips);
             System.out.print("Enter Amount of Chips to be Dealt: ");
             userChips = input.nextInt();
-            if(userChips > totChips) {
+            if (userChips > totChips) {
                 System.out.println("Please Enter Valid Chips!");
                 userChips = input.nextInt();
             }
@@ -91,17 +92,19 @@ public class PlayBlackJack {
                     System.out.println("You have now " + totChips + " chips.");
                 }
             }
-            if(totChips <= 0 ) {
+            if (totChips <= 0) {
                 System.out.println("You have 0 chips left! Please Try Next Time.");
                 break;
-            }
-            else {
-            System.out.print("Do You want to play another Round? (Y/N)");
-            playChoice = input.next().charAt(0);
+            } else {
+                System.out.print("Do You want to play another Round? (Y/N)");
+                playChoice = input.next().charAt(0);
             }
         }
     }
 
+    /* Method to convert the values into integers to follow the 'rule of 21' for the
+    BlackJack Game. This is for the player against dealer.
+     */
     public static void valueUserConverter(Card[] cards) {
         for (Card card : cards) {
             System.out.println(card.getValue() + " of " + card.getSuit());
@@ -151,6 +154,10 @@ public class PlayBlackJack {
         }
     }
 
+     /* Method to convert the values into integers to follow the 'rule of 21' for the
+    BlackJack Game. This is for the player against dealer.
+     */
+    
     public static void valueDealerConverter(Card[] cards) {
         for (Card card : cards) {
             System.out.println(card.getValue() + " of " + card.getSuit());

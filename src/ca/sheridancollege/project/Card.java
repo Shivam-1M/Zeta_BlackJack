@@ -11,7 +11,7 @@ package ca.sheridancollege.project;
  *
  * @author dancye
  * @author Megha Patel
- * @author Shivam Mungra
+ * @author Shivam Mungra, Siamak Tavana, Stacy Benny, Jatin Mahajan
  * date: April 5, 2021 
  */
 public class Card {
